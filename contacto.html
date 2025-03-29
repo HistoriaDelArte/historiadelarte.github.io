@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contáctanos - Historia del Arte</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("TU_USER_ID"); // Reemplaza con tu User ID de EmailJS
+    })();
+  </script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Lato', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
@@ -43,7 +49,7 @@
     <h2>Contáctanos</h2>
     <p>Si tienes preguntas, comentarios o sugerencias, escríbenos.</p>
     
-    <form action="enviar_formulario.php" method="post">
+    <form id="contact-form">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
     
@@ -66,6 +72,22 @@
       </p>
     </div>
   </footer>
-  
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      emailjs.send("TU_SERVICE_ID", "TU_TEMPLATE_ID", {
+        nombre: document.getElementById("nombre").value,
+        email: document.getElementById("email").value,
+        mensaje: document.getElementById("mensaje").value
+      }).then(function(response) {
+        alert("Mensaje enviado con éxito!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("Error al enviar el mensaje. Inténtalo de nuevo más tarde.");
+      });
+    });
+  </script>
 </body>
 </html>
