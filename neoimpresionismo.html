@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neoimpresionismo - Historia del Arte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Lato', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #34495e; color: #fff; padding: 15px 0; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+    nav { display: flex; justify-content: space-between; align-items: center; position: relative; }
+    nav h1 { font-family: 'Merriweather', serif; font-size: 2rem; }
+    nav ul { list-style: none; display: flex; align-items: center; }
+    nav ul li { margin-right: 20px; position: relative; }
+    nav ul li a { text-decoration: none; color: #fff; padding: 8px 12px; transition: background 0.3s; display: block; }
+    nav ul li a:hover { background: #2c3e50; border-radius: 4px; }
+    
+    /* Estilos del menú desplegable */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #2c3e50;
+      border-radius: 4px;
+      min-width: 200px;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .dropdown li { width: 100%; }
+    .dropdown li a { padding: 10px 15px; display: block; color: #fff; }
+    nav ul li:hover > .dropdown { display: block; } /* Mostrar menú al pasar el mouse */
+
+    /* Banner */
+    .banner { background: url('https://via.placeholder.com/1200x300') no-repeat center center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+    .banner h1 { font-family: 'Merriweather', serif; font-size: 3rem; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 8px; }
+
+    /* Contenido */
+    .content { padding: 30px 0; }
+    .content h2 { font-family: 'Merriweather', serif; color: #34495e; margin-bottom: 15px; font-size: 2rem; }
+    .content p { margin-bottom: 20px; text-align: justify; }
+
+    /* Galería */
+    .galeria { display: flex; flex-wrap: wrap; gap: 15px; }
+    .galeria img { width: 100%; max-width: 400px; border: 2px solid #ddd; border-radius: 4px; }
+
+    /* Footer */
+    footer { background: #34495e; color: #fff; text-align: center; padding: 15px 0; font-size: 0.9rem; }
+    footer a { color: #fff; text-decoration: none; margin: 0 10px; }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+      nav { flex-direction: column; align-items: flex-start; }
+      nav ul { flex-direction: column; width: 100%; }
+      nav ul li { width: 100%; text-align: left; margin: 0; }
+      .dropdown { position: static; box-shadow: none; width: 100%; }
+      .banner h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Historia del Arte</h1>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#">Categorías</a>
+            <ul class="dropdown">
+              <li><a href="gotico.html">Gótico</a></li>
+              <li><a href="renacimiento.html">Renacimiento</a></li>
+              <li><a href="barroco.html">Barroco</a></li>
+              <li><a href="romantico.html">Romanticismo</a></li>
+              <li><a href="impresionismo.html">Impresionismo</a></li>
+              <li><a href="cubismo.html">Cubismo</a></li>
+              <li><a href="posimpresionismo.html">Posimpresionismo</a></li>
+              <li><a href="expresionismo.html">Expresionismo</a></li>
+              <li><a href="surrealismo.html">Surrealismo</a></li>
+              <li><a href="abstracto.html">Abstracto</a></li>
+              <li><a href="contemporaneo.html">Arte Contemporáneo</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="banner">
+    <div class="container">
+      <h1>El Neoimpresionismo</h1>
+    </div>
+  </section>
+  
+  <div class="container content">
+    <h2>El Neoimpresionismo</h2>
+    <p>
+      El Neoimpresionismo fue un movimiento artístico desarrollado a finales del siglo XIX, derivado del Impresionismo. Fue impulsado por Georges Seurat y Paul Signac, quienes aplicaron un enfoque científico al color y la luz.
+    </p>
+    <h3>Características Principales</h3>
+    <ul>
+      <li>Uso de la técnica del <strong>Puntillismo</strong> (puntos de colores puros que el ojo mezcla ópticamente).</li>
+      <li>Mayor interés en la teoría del color y la percepción visual.</li>
+      <li>Composiciones más estructuradas y ordenadas en comparación con el Impresionismo.</li>
+    </ul>
+    
+    <h3>Artistas Destacados</h3>
+    <p><strong>Georges Seurat</strong>: Desarrolló el puntillismo y creó la icónica obra <em>"Tarde de domingo en la isla de la Grande Jatte"</em>.</p>
+    <p><strong>Paul Signac</strong>: Experimentó con la mezcla óptica del color y llevó el Neoimpresionismo a nuevas direcciones.</p>
+
+    <div class="galeria">
+      <img src="Imagen/neo.jpg" alt="Obra Neoimpresionista 1">
+      <img src="Imagen/neo2.jpeg" alt="Obra Neoimpresionista 2">
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Historia del Arte. Todos los derechos reservados.</p>
+      <p>
+        <a href="politicas.html">Políticas de Privacidad</a> | 
+        <a href="terminos.html">Términos y Condiciones</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

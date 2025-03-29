@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renacimiento - Historia del Arte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #34495e;
+      color: #fff;
+      padding: 15px 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+    nav ul li {
+      margin-right: 20px;
+      position: relative;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: #2c3e50;
+      border-radius: 4px;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #2c3e50;
+      border-radius: 4px;
+      min-width: 200px;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .dropdown li {
+      width: 100%;
+    }
+    .dropdown li a {
+      padding: 10px 15px;
+      display: block;
+    }
+    nav ul li:hover > .dropdown {
+      display: block;
+    }
+    .banner {
+      background: url('renacimiento-banner.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .banner h1 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .content {
+      padding: 30px 0;
+    }
+    .content h2 {
+      color: #34495e;
+      font-size: 2rem;
+    }
+    .content p {
+      text-align: justify;
+    }
+    footer {
+      background: #34495e;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Historia del Arte</h1>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#">Categorías</a>
+            <ul class="dropdown">
+              <li><a href="gotico.html">Gótico</a></li>
+              <li><a href="barroco.html">Barroco</a></li>
+              <li><a href="romantico.html">Romanticismo</a></li>
+              <li><a href="impresionismo.html">Impresionismo</a></li>
+              <li><a href="cubismo.html">Cubismo</a></li>
+              <li><a href="posimpresionismo.html">Posimpresionismo</a></li>
+              <li><a href="neoimpresionismo.html">Neoimpresionismo</a></li>
+              <li><a href="expresionismo.html">Expresionismo</a></li>
+              <li><a href="surrealismo.html">Surrealismo</a></li>
+              <li><a href="abstracto.html">Abstracto</a></li>
+              <li><a href="contemporaneo.html">Arte Contemporáneo</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="banner">
+    <div class="container">
+      <h1>El Renacimiento</h1>
+    </div>
+  </section>
+  <div class="container content">
+    <h2>Características del Renacimiento</h2>
+    <p>
+      El Renacimiento fue un movimiento cultural que surgió en Europa entre los siglos XIV y XVII, caracterizado por el retorno a los valores del arte clásico grecorromano, el humanismo y la perspectiva en la pintura. Se inició en Italia y se expandió por toda Europa, dando lugar a un arte centrado en la belleza, la armonía y la proporción.
+    </p>
+    <h3>Principales características:</h3>
+    <ul>
+      <li>Uso de la perspectiva para crear profundidad y realismo.</li>
+      <li>Enfoque en la figura humana con proporciones anatómicas precisas.</li>
+      <li>Inspiración en la antigüedad clásica.</li>
+      <li>Dominio del claroscuro para efectos de luz y sombra.</li>
+      <li>Representación de temas mitológicos, religiosos y retratos.</li>
+      <li>Desarrollo de nuevas técnicas como el sfumato y el esfumado.</li>
+    </ul>
+    <h2>Principales artistas del Renacimiento</h2>
+    <h3>Leonardo da Vinci (1452-1519)</h3>
+    <p>
+      Uno de los artistas más influyentes del Renacimiento, conocido por su talento en múltiples disciplinas. Su obra más famosa, <em>La Mona Lisa</em>, es un ejemplo de su maestría en el sfumato. Otras obras destacadas incluyen <em>La Última Cena</em> y <em>El Hombre de Vitruvio</em>.
+    </p>
+    <img src="imagen/Davinci.jpeg" alt="Leonardo da Vinci">
+    <h3>Michelangelo Buonarroti (1475-1564)</h3>
+    <p>
+      Escultor, pintor y arquitecto, Miguel Ángel dejó un legado impresionante con obras como la escultura de <em>David</em> y la <em>Capilla Sixtina</em> en el Vaticano. Su dominio del cuerpo humano y su fuerza expresiva marcaron el arte renacentista.
+    </p>
+    <img src="imagen/Michelangelo.jpg" alt="Miguel Ángel">
+    <h3>Rafael Sanzio (1483-1520)</h3>
+    <p>
+      Conocido por su estilo armonioso y equilibrado, Rafael creó obras como <em>La Escuela de Atenas</em>, un fresco que representa a los grandes filósofos de la antigüedad y que simboliza el espíritu del Renacimiento.
+    </p>
+    <img src="imagen/RafaelSanzio.jpeg" alt="Rafael Sanzio">
+    <h3>Tiziano Vecelli (1488-1576)</h3>
+    <p>
+      Maestro del color y el retrato, Tiziano destacó por su uso del óleo en obras como <em>Venus de Urbino</em> y sus retratos de la nobleza europea. Su influencia se extendió a los artistas barrocos posteriores.
+    </p>
+    <img src="imagen/Tizano.jpg" alt="Tiziano Vecelli">
+    <h2>Importancia del Renacimiento en la Historia del Arte</h2>
+    <p>
+      El Renacimiento supuso una transformación en la forma en que el arte era concebido, alejándose de los estilos medievales y adoptando una visión más científica y humanista del mundo. La invención de la imprenta ayudó a la difusión del conocimiento, permitiendo que las ideas renacentistas se expandieran por toda Europa.
+    </p>
+    <p>
+      Este periodo también influyó en la arquitectura, con figuras como Filippo Brunelleschi, quien diseñó la cúpula de la Catedral de Florencia, y Andrea Palladio, cuyo estilo inspiró la arquitectura neoclásica.
+    </p>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Historia del Arte. Todos los derechos reservados.</p>
+      <p>
+        <a href="politicas.html">Políticas de Privacidad</a> | 
+        <a href="terminos.html">Términos y Condiciones</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

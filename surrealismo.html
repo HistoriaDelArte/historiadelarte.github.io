@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surrealismo - Historia del Arte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Lato', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #34495e; color: #fff; padding: 15px 0; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    nav h1 { font-family: 'Merriweather', serif; font-size: 2rem; }
+    nav ul { list-style: none; display: flex; align-items: center; }
+    nav ul li { margin-right: 20px; position: relative; }
+    nav ul li a { text-decoration: none; color: #fff; padding: 8px 12px; transition: background 0.3s; }
+    nav ul li a:hover { background: #2c3e50; border-radius: 4px; }
+    .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #2c3e50; border-radius: 4px; min-width: 200px; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+    .dropdown li a { padding: 10px 15px; display: block; color: #fff; }
+    nav ul li:hover > .dropdown, .dropdown:hover { display: block; }
+    .banner { background: url('https://via.placeholder.com/1200x300') no-repeat center center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+    .banner h1 { font-family: 'Merriweather', serif; font-size: 3rem; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 8px; }
+    .content { padding: 30px 0; }
+    .content h2 { font-family: 'Merriweather', serif; color: #34495e; margin-bottom: 15px; font-size: 2rem; }
+    .content p { margin-bottom: 20px; text-align: justify; }
+    .galeria { display: flex; flex-wrap: wrap; gap: 15px; }
+    .galeria img { width: 100%; max-width: 400px; border: 2px solid #ddd; border-radius: 4px; }
+    footer { background: #34495e; color: #fff; text-align: center; padding: 15px 0; font-size: 0.9rem; }
+    footer a { color: #fff; text-decoration: none; margin: 0 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Historia del Arte</h1>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#">Categorías</a>
+            <ul class="dropdown">
+              <li><a href="gotico.html">Gótico</a></li>
+              <li><a href="renacimiento.html">Renacimiento</a></li>
+              <li><a href="barroco.html">Barroco</a></li>
+              <li><a href="romantico.html">Romanticismo</a></li>
+              <li><a href="impresionismo.html">Impresionismo</a></li>
+              <li><a href="cubismo.html">Cubismo</a></li>
+              <li><a href="posimpresionismo.html">Posimpresionismo</a></li>
+              <li><a href="neoimpresionismo.html">Neoimpresionismo</a></li>
+              <li><a href="expresionismo.html">Expresionismo</a></li>
+              <li><a href="abstracto.html">Abstracto</a></li>
+              <li><a href="contemporaneo.html">Arte Contemporáneo</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="banner">
+    <div class="container">
+      <h1>El Surrealismo</h1>
+    </div>
+  </section>
+  
+  <div class="container content">
+    <h2>El Surrealismo</h2>
+    <p>
+      El Surrealismo es un movimiento artístico y literario que surgió en la década de 1920 en Francia. Se caracteriza por explorar el subconsciente, lo onírico y la libre asociación de ideas para crear imágenes impactantes y sorprendentes.
+    </p>
+    <h2>Características del Surrealismo</h2>
+    <ul>
+      <li>Exploración del subconsciente y los sueños.</li>
+      <li>Uso de imágenes inesperadas y yuxtaposiciones sorprendentes.</li>
+      <li>Influencia del psicoanálisis de Sigmund Freud.</li>
+      <li>Rechazo de la lógica y la razón en favor de lo irracional.</li>
+      <li>Empleo de técnicas como el automatismo y el cadáver exquisito.</li>
+    </ul>
+    <h2>Autores Destacados</h2>
+    <ul>
+      <li><strong>Salvador Dalí:</strong> Conocido por obras como "La persistencia de la memoria".</li>
+      <li><strong>René Magritte:</strong> Famoso por sus pinturas enigmáticas como "El hijo del hombre".</li>
+      <li><strong>Max Ernst:</strong> Innovador en el uso del frottage y el collage surrealista.</li>
+      <li><strong>Joan Miró:</strong> Exploró el surrealismo abstracto con un estilo vibrante y colorido.</li>
+      <li><strong>André Breton:</strong> Fundador del surrealismo y autor del "Manifiesto Surrealista".</li>
+      <li><strong>Leonora Carrington:</strong> Pintora y escritora surrealista con una visión mística y personal.</li>
+      <li><strong>Remedios Varo:</strong> Artista que combinó el surrealismo con elementos mágicos y científicos.</li>
+    </ul>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Historia del Arte. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

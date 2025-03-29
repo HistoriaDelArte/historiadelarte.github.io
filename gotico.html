@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arte Gótico - Historia del Arte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Lato', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #34495e; color: #fff; padding: 15px 0; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    nav h1 { font-family: 'Merriweather', serif; font-size: 2rem; }
+    nav ul { list-style: none; display: flex; align-items: center; }
+    nav ul li { margin-right: 20px; position: relative; }
+    nav ul li a { text-decoration: none; color: #fff; padding: 8px 12px; transition: background 0.3s; }
+    nav ul li a:hover { background: #2c3e50; border-radius: 4px; }
+    .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #2c3e50; border-radius: 4px; min-width: 200px; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+    .dropdown li a { padding: 10px 15px; display: block; color: #fff; }
+    nav ul li:hover > .dropdown, .dropdown:hover { display: block; }
+    .banner { background: url('https://via.placeholder.com/1200x300') no-repeat center center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+    .banner h1 { font-family: 'Merriweather', serif; font-size: 3rem; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 8px; }
+    .content { padding: 30px 0; }
+    .content h2 { font-family: 'Merriweather', serif; color: #34495e; margin-bottom: 15px; font-size: 2rem; }
+    .content p { margin-bottom: 20px; text-align: justify; }
+    .artista { margin-bottom: 20px; text-align: center; }
+    .artista img { width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 10px; }
+    footer { background: #34495e; color: #fff; text-align: center; padding: 15px 0; font-size: 0.9rem; }
+    footer a { color: #fff; text-decoration: none; margin: 0 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Historia del Arte</h1>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#">Categorías</a>
+            <ul class="dropdown">
+              <li><a href="renacimiento.html">Renacimiento</a></li>
+              <li><a href="barroco.html">Barroco</a></li>
+              <li><a href="romantico.html">Romanticismo</a></li>
+              <li><a href="impresionismo.html">Impresionismo</a></li>
+              <li><a href="cubismo.html">Cubismo</a></li>
+              <li><a href="posimpresionismo.html">Posimpresionismo</a></li>
+              <li><a href="neoimpresionismo.html">Neoimpresionismo</a></li>
+              <li><a href="expresionismo.html">Expresionismo</a></li>
+              <li><a href="surrealismo.html">Surrealismo</a></li>
+              <li><a href="abstracto.html">Abstracto</a></li>
+              <li><a href="contemporaneo.html">Arte Contemporáneo</a></li> 
+            </ul>
+          </li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="banner">
+    <div class="container">
+      <h1>El Arte Gótico</h1>
+    </div>
+  </section>
+  
+  <div class="container content">
+    <h2>Características del Arte Gótico</h2>
+    <ul>
+      <li><strong>Arquitectura monumental:</strong> Catedrales con arcos apuntados y vitrales coloridos.</li>
+      <li><strong>Escultura detallada:</strong> Figuras expresivas y naturalistas en fachadas e interiores.</li>
+      <li><strong>Pintura religiosa:</strong> Iconografía cristiana con colores vivos y fondo dorado.</li>
+      <li><strong>Uso de la luz:</strong> Grandes ventanales y rosetones para iluminar los espacios sagrados.</li>
+    </ul>
+    
+    <h2>Artistas Destacados</h2>
+    <div class="artista">
+      <img src="Imagen/giotto.jpg" alt="Giotto di Bondone">
+      <h3>Giotto di Bondone (1267-1337)</h3>
+      <p>Pintor y arquitecto italiano que introdujo la perspectiva y la emoción en sus obras.</p>
+    </div>
+    
+    <div class="artista">
+      <img src="Imagen/abadsguer.jpg" alt="Abad Suger">
+      <h3>Abad Suger (1081-1151)</h3>
+      <p>Impulsor del estilo gótico en la arquitectura, renovando la Abadía de Saint-Denis.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Historia del Arte. Todos los derechos reservados.</p>
+      <p>
+        <a href="politicas.html">Políticas de Privacidad</a> | 
+        <a href="terminos.html">Términos y Condiciones</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barroco - Historia del Arte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* (Usa el mismo CSS que en renacimiento.html) */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Lato', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #34495e; color: #fff; padding: 15px 0; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    nav h1 { font-family: 'Merriweather', serif; font-size: 2rem; }
+    nav ul { list-style: none; display: flex; align-items: center; }
+    nav ul li { margin-right: 20px; position: relative; }
+    nav ul li a { text-decoration: none; color: #fff; padding: 8px 12px; transition: background 0.3s; }
+    nav ul li a:hover { background: #2c3e50; border-radius: 4px; }
+    .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #2c3e50; border-radius: 4px; min-width: 200px; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+    .dropdown li a { padding: 10px 15px; display: block; color: #fff; }
+    nav ul li:hover > .dropdown, .dropdown:hover { display: block; }
+    .banner { background: url('https://via.placeholder.com/1200x300') no-repeat center center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+    .banner h1 { font-family: 'Merriweather', serif; font-size: 3rem; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 8px; }
+    .content { padding: 30px 0; }
+    .content h2 { font-family: 'Merriweather', serif; color: #34495e; margin-bottom: 15px; font-size: 2rem; }
+    .content p { margin-bottom: 20px; text-align: justify; }
+    .galeria { display: flex; flex-wrap: wrap; gap: 15px; }
+    .galeria img { width: 100%; max-width: 400px; border: 2px solid #ddd; border-radius: 4px; }
+    footer { background: #34495e; color: #fff; text-align: center; padding: 15px 0; font-size: 0.9rem; }
+    footer a { color: #fff; text-decoration: none; margin: 0 10px; }
+    @media (max-width: 768px) { nav ul { flex-direction: column; } nav ul li { margin: 10px 0; } .banner h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Historia del Arte</h1>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#">Categorías</a>
+            <ul class="dropdown">
+              <li><a href="gotico.html">Gótico</a></li>
+              <li><a href="renacimiento.html">Renacimiento</a></li>
+              <li><a href="romantico.html">Romanticismo</a></li>
+              <li><a href="impresionismo.html">Impresionismo</a></li>
+              <li><a href="cubismo.html">Cubismo</a></li>
+              <li><a href="posimpresionismo.html">Posimpresionismo</a></li>
+              <li><a href="neoimpresionismo.html">Neoimpresionismo</a></li>
+              <li><a href="expresionismo.html">Expresionismo</a></li>
+              <li><a href="surrealismo.html">Surrealismo</a></li>
+              <li><a href="abstracto.html">Abstracto</a></li>
+              <li><a href="contemporaneo.html">Arte Contemporáneo</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="banner">
+    <div class="container">
+      <h1>El Barroco</h1>
+    </div>
+  </section>
+  
+  <div class="container content">
+    <h2>Introducción al Barroco</h2>
+    <p>
+      El Barroco fue un movimiento artístico que surgió en Europa a finales del siglo XVI y se prolongó hasta principios del siglo XVIII.
+      Se caracteriza por su dramatismo, ornamentación recargada y el uso de contrastes intensos de luz y sombra.
+    </p>
+    
+    <h2>Características del Barroco</h2>
+    <ul>
+      <li>Dramatismo y teatralidad en la composición.</li>
+      <li>Uso del claroscuro (contraste entre luz y sombra).</li>
+      <li>Énfasis en el movimiento y la emoción.</li>
+      <li>Ornamentación detallada y exuberancia visual.</li>
+      <li>Perspectivas dinámicas y diagonales.</li>
+    </ul>
+    
+    <h2>Artistas Destacados</h2>
+    <h3>Caravaggio (1571-1610)</h3>
+    <p>
+      Michelangelo Merisi da Caravaggio fue un pintor italiano que revolucionó la pintura con su uso extremo del claroscuro.
+      Su estilo influenció a numerosos artistas posteriores y es considerado el precursor del Barroco pictórico.
+    </p>
+    <h3>Rembrandt (1606-1669)</h3>
+    <p>
+      Rembrandt van Rijn fue un maestro del Barroco en los Países Bajos. Su capacidad para capturar la luz y la expresión emocional
+      lo convirtió en uno de los pintores más influyentes de la historia.
+    </p>
+    <h3>Peter Paul Rubens (1577-1640)</h3>
+    <p>
+      Pintor flamenco famoso por sus composiciones dinámicas y su estilo exuberante. Sus obras suelen representar escenas religiosas,
+      mitológicas y retratos con gran riqueza cromática.
+    </p>
+    <h3>Diego Velázquez (1599-1660)</h3>
+    <p>
+      Maestro del Siglo de Oro español, Velázquez destacó por su dominio de la perspectiva y la luz. Su obra más célebre, <i>Las Meninas</i>,
+      es considerada una de las mejores pinturas de la historia del arte.
+    </p>
+    
+    <h2>Galería de Obras</h2>
+    <div class="galeria">
+      <img src="Imagen/caravaggio.jpg" alt="Obra de Caravaggio">
+      <img src="Imagen/rembrant.jpg" alt="Obra de Rembrandt">
+      <img src="Imagen/rubens.jpg" alt="Obra de Rubens">
+      <img src="Imagen/meninas.jpg" alt="Las Meninas de Velázquez">
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Historia del Arte. Todos los derechos reservados.</p>
+      <p>
+        <a href="politicas.html">Políticas de Privacidad</a> | 
+        <a href="terminos.html">Términos y Condiciones</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
